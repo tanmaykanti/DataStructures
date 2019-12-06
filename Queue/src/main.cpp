@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Queue.h"
+#include "PriorityQueue.h"
 using namespace std;
 
 int main() {
@@ -24,5 +25,21 @@ int main() {
 	q.Dequeue();
 	q.Dequeue();
 	q.PrintQueue();
+	cout << "!!!Hello Priority Queue!!!" << endl;
+	PriorityQueue pq(5);
+	pq.Enqueue(10,5);
+	pq.Enqueue(20,2);
+	pq.Enqueue(30,0);
+	pq.Enqueue(13,0);
+	pq.Enqueue(24,6);
+	pq.PrintQueue();
+	pq.Dequeue();
+	pq.PrintQueue();
+	pq.Dequeue();
+	pq.PrintQueue();
+	pq.Dequeue();
+	pq.PrintQueue();
+	pq.Dequeue();
+	pq.PrintQueue();
 	return 0;
 }
