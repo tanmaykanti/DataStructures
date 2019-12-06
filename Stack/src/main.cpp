@@ -7,9 +7,23 @@
 //============================================================================
 
 #include <iostream>
+#include "Stack.h"
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	cout << "!!!Hello Stack!!!" << endl; // prints !!!Hello World!!!
+	Stack s(5);
+	s.Pop();
+	s.Push(4);
+	s.Push(3);
+	s.Push(10);
+	s.Push(90);
+	s.Push(23);
+	s.Push(-3);
+	s.PrintStack();
+	s.Pop();
+	s.Pop();
+	s.PrintStack();
+
 	return 0;
 }

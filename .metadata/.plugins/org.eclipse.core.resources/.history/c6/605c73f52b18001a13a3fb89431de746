@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : Stack.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Stack.h"
+using namespace std;
+
+int main() {
+	cout << "!!!Hello Stack!!!" << endl; // prints !!!Hello World!!!
+	Stack s(5);
+	s.Pop();
+	s.Push(4);
+	s.Push(3);
+	s.Push(10);
+	s.Push(90);
+	s.Push(23);
+	s.Push(-3);
+	s.PrintStack();
+	s.Pop();
+	s.Pop();
+	s.PrintStack();
+	s.~Stack();
+	return 0;
+}

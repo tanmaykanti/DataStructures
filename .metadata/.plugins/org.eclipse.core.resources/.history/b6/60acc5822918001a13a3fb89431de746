@@ -1,0 +1,27 @@
+/*
+ * Stack.cpp
+ *
+ *  Created on: 06-Dec-2019
+ *      Author: tanmay
+ */
+
+#include "Stack.h"
+
+Stack::Stack(int size):SIZE(size) {
+	// TODO Auto-generated constructor stub
+	count=0;
+	array=new int[size];
+	for(int i=0;i<size;i++)
+	{
+		array[i]=0;
+	}
+}
+
+bool Stack::isEmpty()
+{
+	return count==0;
+}
+bool Stack::isFull()
+{
+
+}
